@@ -31,7 +31,7 @@ code {
 }
 
 .sidenavStyle{
-  background: #0A1010;
+  background: rgb(10, 14, 14);
 }
 
 
@@ -56,6 +56,22 @@ code {
   color: #1d2227;
 
 }
+
+/* .navlistStyle{
+  color : grey
+} */
+
+a.nav-link{
+  color: grey !important
+}
+
+a.nav-link:hover, a.nav-link:active {
+  color: white !important;
+  transform: scale(1.07);
+  border-left: .10em solid  green !important;
+}
+
+
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
