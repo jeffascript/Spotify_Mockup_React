@@ -20,7 +20,7 @@ code {
     monospace;
 }
 
-/* Background CSS **********/
+/* Background CSS && TOP NAV && SIDE NAV**********/
 
 /* text style: #9E9E9E */
 
@@ -61,32 +61,89 @@ code {
   color : grey
 } */
 
-a.nav-link{
-  color: grey !important
+.navlinkStyle{
+  color: gray !important
 }
 
-a.nav-link:hover, a.nav-link:active {
+.topNavStyle{
+  color: rgb(177, 177, 177) !important;
+  text-transform: uppercase;
+  font-size: x-small;
+  font-weight: bolder;
+}
+
+.navlinkStyle:hover,.navlinkStyle:active {
   color: white !important;
   transform: scale(1.07);
   border-left: .10em solid  green !important;
 }
+/* 
+.navlinkStyle:hover::before,.navlinkStyle:active::before {
+  color: white !important;
+  transform: scale(1.07);
+  content: ""!important;
+  display: block!important;
+  margin: 0 auto!important;
+  padding-left: 0.5em!important;
+  width: 75%!important;
+  border-left: .10em solid  green !important;
+} */
+
+.topNavStyle:hover{
+  color: white !important;
+  transform: scale(1.07);
+}
+
+.topNavStyle:hover:after{
+ 
+  content: "";
+  display: block;
+  margin: 0 auto;
+  padding-top: 0.5em;
+  width: 55%;
+  border-bottom: .11em solid  rgb(0, 255, 0) !important;
+}
 
 
+/* #alertlist li.selected:after, #alertlist li:hover:after */
+.ajbjbjwbhbj:after{
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 50%; /* Change this to whatever width you want. */
+  padding-top: 20px; /* This creates some space between the element and the border. */
+  border-bottom: 1px solid rgb(47, 165, 53); /* This creates the border. Replace black with whatever color you want. */
+}
+
+
+
+
+a, a:hover{
+  text-decoration: none !important;
+}
+
+.iconStyle{
+  font-size: xx-large;
+}
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
   .navbutton{
     display:none
 
+  }
 
+  .iconStyle{
+    font-size: xx-small !important;
   }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) and (max-width: 767.98px) { .navbutton{
-  width:100%
-
-} } */
+ @media (min-width: 576px) and (max-width: 767.98px) {
+  .iconStyle{
+    font-size: xx-small !important;
+  } 
+} 
 
 /* // Medium devices (tablets, 768px and up) */
 /* @media (min-width: 768px) and (max-width: 991.98px) { ... } */
