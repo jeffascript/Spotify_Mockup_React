@@ -10,9 +10,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  width: 100vw;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Background CSS **********/
+
+/* text style: #9E9E9E */
+
+/* hover text style : white */
+
+.mainstyle{
+  background-image: linear-gradient(to right bottom, #337a85, #2b5d62, #224242, #182827, #090f0e);
+}
+
+.sidenavStyle{
+  background: #0A1010;
 }
