@@ -5,7 +5,7 @@ import navlogo from "./lib/logo.png";
 class SideNav extends Component {
   render() {
     return (
-      <div className="sidenavStyle h-100 p-1 overflow-hidden" >
+      <div className="sidenavStyle h-100 p-2 overflow-hidden" >
           
         <div className="h-100 d-flex  flex-column justify-content-between  align-items-center ">
             <div className="pl-2">
@@ -41,14 +41,15 @@ class SideNav extends Component {
               </Nav>
             </div>
     
-            <div className="d-flex flex-column justify-content-around ">
+            <div className="d-flex flex-column justify-content-around w-75 ">
               <div className="d-flex flex-column justify-content-betweeen align-content-between">
-                  <Button>hello</Button>
-                  &nbsp;
-                  <Button>hello</Button>
-                  &nbsp;
+              <button className="navbutton">LOGIN</button>
+                  <br/>
+                  <button className="navbutton">SIGN UP</button>
+                 <br/>
               </div>
-              <p>Cookie |  Privacy   </p> <p>Policy</p>
+              <small className="text-start text-white-50">Cookie |  Privacy </small> <small className="text-white-50">&nbsp; Policy </small>
+              <small ></small>
             
             </div>
         </div>
