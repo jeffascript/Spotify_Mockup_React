@@ -26,12 +26,16 @@ code {
 
 /* hover text style : white */
 
+/* display: table-cell;  
+list-style: none */
+
 .mainstyle{
   background-image: linear-gradient(to right bottom, #337a85, #2b5d62, #224242, #182827, #090f0e);
 }
 
 .sidenavStyle{
   background: rgb(10, 14, 14);
+  
 }
 
 
@@ -57,12 +61,13 @@ code {
 
 }
 
-/* .navlistStyle{
-  color : grey
-} */
+ .navlistStyle{
+  margin-bottom: .78em;
+} 
 
 .navlinkStyle{
-  color: gray !important
+  color: gray !important;
+  padding-left: 0.7em !important;
 }
 
 .topNavStyle{
@@ -76,9 +81,17 @@ code {
   color: white !important;
   transform: scale(1.07);
   border-left: .10em solid  green !important;
+  padding-left: 0.7em !important;
 }
-/* 
-.navlinkStyle:hover::before,.navlinkStyle:active::before {
+
+.chosen {
+  color: white !important;
+  border-left: .10em solid  green !important;
+  
+
+}
+
+/* .navlinkStyle:hover::after{
   color: white !important;
   transform: scale(1.07);
   content: ""!important;
@@ -102,6 +115,7 @@ code {
   padding-top: 0.5em;
   width: 55%;
   border-bottom: .11em solid  rgb(0, 255, 0) !important;
+ 
 }
 
 

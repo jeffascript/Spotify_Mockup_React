@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 class Main extends Component {
   state = {};
-
+ 
   render() {
     return (
       <>
@@ -21,7 +21,10 @@ class Main extends Component {
                  <SideNav/>
             
              
-                  <Route exact path="/" component={HomePage} />
+                  <Route exact path = {"/home" || "/"} component={HomePage} />
+
+
+                  {/* <Route exact path ="/" component={HomePage} /> */}
 
                   <Route path="/search/:searchString"  />
 
